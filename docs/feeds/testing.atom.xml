@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>DS Blog - Testing</title><link href="/" rel="alternate"/><link href="/feeds/testing.atom.xml" rel="self"/><id>/</id><updated>2025-01-24T15:00:00-05:00</updated><entry><title>Testing Auto-Generation Workflow</title><link href="/test-auto-generation.html" rel="alternate"/><published>2025-01-24T15:00:00-05:00</published><updated>2025-01-24T15:00:00-05:00</updated><author><name>DS</name></author><id>tag:None,2025-01-24:/test-auto-generation.html</id><summary type="html">&lt;p&gt;A simple test post to verify the auto-generation workflow is working.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Testing Auto-Generation&lt;/h1&gt;
-&lt;p&gt;This is a test post to verify that our GitHub Actions workflow for auto-generating blog entries is working correctly after fixing the permissions issue.&lt;/p&gt;
-&lt;p&gt;The workflow should:
-1. Detect this new content file
-2. Create an auto-generated entry in &lt;code&gt;content/auto-generated/&lt;/code&gt;
-3. Build and deploy the updated site&lt;/p&gt;
-&lt;p&gt;Let's see if it works!&lt;/p&gt;</content><category term="Testing"/><category term="test"/><category term="workflow"/><category term="automation"/></entry></feed>
