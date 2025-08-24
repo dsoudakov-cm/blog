@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>DS Blog - Development</title><link href="/" rel="alternate"/><link href="/feeds/development.atom.xml" rel="self"/><id>/</id><updated>2025-08-24T23:46:00-04:00</updated><entry><title>Code Update: Test auto-generation workflow</title><link href="/commit-20250824-234634.html" rel="alternate"/><published>2025-08-24T23:46:00-04:00</published><updated>2025-08-24T23:46:00-04:00</updated><author><name>Dmitri</name></author><id>tag:None,2025-08-24:/commit-20250824-234634.html</id><summary type="html">&lt;p&gt;Automatic blog entry for commit 778062c&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Development Update&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Commit:&lt;/strong&gt; &lt;code&gt;778062c&lt;/code&gt;&lt;br&gt;
+&lt;strong&gt;Author:&lt;/strong&gt; Dmitri&lt;br&gt;
+&lt;strong&gt;Date:&lt;/strong&gt; 2025-08-24 23:46  &lt;/p&gt;
+&lt;h2&gt;Changes Made&lt;/h2&gt;
+&lt;p&gt;Test auto-generation workflow&lt;/p&gt;
+&lt;h2&gt;Files Modified&lt;/h2&gt;
+&lt;p&gt;The following files were modified in this commit:&lt;/p&gt;</content><category term="Development"/><category term="git"/><category term="commits"/><category term="development"/></entry></feed>
