@@ -7,6 +7,9 @@ on:
       - 'content/**'
       - '!content/auto-generated/**'
 
+permissions:
+  contents: write
+
 jobs:
   create-blog-entry:
     runs-on: ubuntu-latest
