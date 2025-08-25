@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'content/**'
+      - 'content/*.md'
       - '!content/auto-generated/**'
 
 permissions:
@@ -13,7 +13,7 @@ permissions:
 jobs:
   create-blog-entry:
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip-blog]')"
+    if: "!contains(github.event.head_commit.message, '[skip-blog]') && !contains(github.event.head_commit.message, '[no-blog]') && !contains(github.event.head_commit.message, 'fix') && !contains(github.event.head_commit.message, 'Fix') && !contains(github.event.head_commit.message, 'update') && !contains(github.event.head_commit.message, 'Update') && !contains(github.event.head_commit.message, 'Auto-generated')"
     
     steps:
     - name: Checkout repository
@@ -26,7 +26,22 @@ jobs:
       with:
         python-version: '3.11'
         
+    - name: Check for new markdown files
+      id: check-files
+      run: |
+        # Check if any new .md files were added to content directory (excluding auto-generated)
+        NEW_MD_FILES=$(git diff-tree --no-commit-id --name-status -r ${{ github.sha }} | grep -E '^A\s+content/[^/]+\.md$' | grep -v 'auto-generated' || true)
+        if [ -z "$NEW_MD_FILES" ]; then
+          echo "No new markdown files added to content directory"
+          echo "skip=true" >> $GITHUB_OUTPUT
+        else
+          echo "New markdown files detected:"
+          echo "$NEW_MD_FILES"
+          echo "skip=false" >> $GITHUB_OUTPUT
+        fi
+        
     - name: Create auto-generated blog entry
+      if: steps.check-files.outputs.skip != 'true'
       run: |
         # Create auto-generated directory if it doesn't exist
         mkdir -p content/auto-generated
@@ -69,19 +84,13 @@ jobs:
           echo "- \`${file}\`" >> "content/auto-generated/${SLUG}.md"
         done
         
-    - name: Install Pelican
-      run: |
-        python -m pip install --upgrade pip
-        pip install pelican markdown
-        
-    - name: Build and deploy
-      run: |
-        pelican content -o docs -s publishconf.py
+
         
     - name: Commit and push changes
+      if: steps.check-files.outputs.skip != 'true'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
-        git commit -m "Auto-generated blog entry for commit ${{ github.sha }}" || exit 0
+        git commit -m "[skip-blog] Auto-generated blog entry for commit ${{ github.sha }}" || exit 0
         git push

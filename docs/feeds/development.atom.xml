@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>DS Blog - Development</title><link href="https://dsoudakov-cm.github.io/blog/" rel="alternate"/><link href="https://dsoudakov-cm.github.io/blog/feeds/development.atom.xml" rel="self"/><id>https://dsoudakov-cm.github.io/blog/</id><updated>2025-08-25T00:03:00-04:00</updated><entry><title>Code Update: Fix date on agentic AI blog post to correct date (August 24, 2025)</title><link href="https://dsoudakov-cm.github.io/blog/commit-20250825-000334.html" rel="alternate"/><published>2025-08-25T00:03:00-04:00</published><updated>2025-08-25T00:03:00-04:00</updated><author><name>Dmitri</name></author><id>tag:dsoudakov-cm.github.io,2025-08-25:/blog/commit-20250825-000334.html</id><summary type="html">&lt;p&gt;Automatic blog entry for commit ed9c6fe&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Development Update&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Commit:&lt;/strong&gt; &lt;code&gt;ed9c6fe&lt;/code&gt;&lt;br&gt;
-&lt;strong&gt;Author:&lt;/strong&gt; Dmitri&lt;br&gt;
-&lt;strong&gt;Date:&lt;/strong&gt; 2025-08-25 00:03  &lt;/p&gt;
-&lt;h2&gt;Changes Made&lt;/h2&gt;
-&lt;p&gt;Fix date on agentic AI blog post to correct date (August 24, 2025)&lt;/p&gt;
-&lt;h2&gt;Files Modified&lt;/h2&gt;
-&lt;p&gt;The following files were modified in this commit:&lt;/p&gt;</content><category term="Development"/><category term="git"/><category term="commits"/><category term="development"/></entry></feed>
