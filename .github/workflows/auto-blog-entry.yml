@@ -84,8 +84,6 @@ jobs:
           echo "- \`${file}\`" >> "content/auto-generated/${SLUG}.md"
         done
         
-
-        
     - name: Commit and push changes
       if: steps.check-files.outputs.skip != 'true'
       run: |
