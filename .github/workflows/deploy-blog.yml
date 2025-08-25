@@ -3,15 +3,8 @@ name: Deploy Pelican Blog
 on:
   push:
     branches: [ main ]
-    paths-ignore:
-      - 'content/*.md'
-      - '!content/auto-generated/**'
-  pull_request:
-    branches: [ main ]
-  workflow_run:
-    workflows: ["Auto Blog Entry on Commit"]
-    types:
-      - completed
+    paths:
+      - 'content/**.md'
 
 permissions:
   contents: read
