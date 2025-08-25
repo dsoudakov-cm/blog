@@ -1,5 +1,5 @@
 Title: Understanding Agentic AI: The Next Evolution in Artificial Intelligence
-Date: 2025-01-24 14:30
+Date: 2025-08-24 15:30
 Category: Technology
 Tags: ai, agentic ai, automation, artificial intelligence
 Slug: agentic-ai-overview
