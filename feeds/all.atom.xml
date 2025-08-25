@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>DS Blog</title><link href="https://dsoudakov-cm.github.io/blog/" rel="alternate"/><link href="https://dsoudakov-cm.github.io/blog/feeds/all.atom.xml" rel="self"/><id>https://dsoudakov-cm.github.io/blog/</id><updated>2025-08-24T15:30:00-04:00</updated><entry><title>Understanding Agentic AI: The Next Evolution in Artificial Intelligence</title><link href="https://dsoudakov-cm.github.io/blog/agentic-ai-overview.html" rel="alternate"/><published>2025-08-24T15:30:00-04:00</published><updated>2025-08-24T15:30:00-04:00</updated><author><name>DS</name></author><id>tag:dsoudakov-cm.github.io,2025-08-24:/blog/agentic-ai-overview.html</id><summary type="html">&lt;p&gt;A brief exploration of agentic AI systems and their potential to transform how we interact with artificial intelligence.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Understanding Agentic AI: The Next Evolution in Artificial Intelligence&lt;/h1&gt;
+&lt;p&gt;Agentic AI represents a significant leap forward from traditional AI systems. Unlike conventional AI that responds to specific prompts, agentic AI systems can act autonomously, make decisions, and pursue goals with minimal human intervention.&lt;/p&gt;
+&lt;h2&gt;What Makes AI "Agentic"?&lt;/h2&gt;
+&lt;p&gt;Agentic AI systems possess several key characteristics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Autonomy&lt;/strong&gt;: They can operate independently and make decisions without constant human guidance&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Goal-oriented behavior&lt;/strong&gt;: They work toward specific objectives, adapting their approach as needed&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tool usage&lt;/strong&gt;: They can interact with external systems, APIs, and tools to accomplish tasks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Planning and reasoning&lt;/strong&gt;: They break down complex problems into manageable steps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Real-World Applications&lt;/h2&gt;
+&lt;p&gt;We're already seeing agentic AI in action:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Code assistants&lt;/strong&gt; that can write, test, and debug entire applications&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Research agents&lt;/strong&gt; that gather information from multiple sources and synthesize findings&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Customer service bots&lt;/strong&gt; that can resolve complex issues across multiple systems&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content creation tools&lt;/strong&gt; that can plan, research, and produce comprehensive materials&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;The Promise and Challenges&lt;/h2&gt;
+&lt;p&gt;While agentic AI offers tremendous potential for automation and productivity gains, it also raises important questions about control, reliability, and the changing nature of human-AI collaboration.&lt;/p&gt;
+&lt;p&gt;As these systems become more capable, we'll need to develop new frameworks for oversight, safety, and integration into our workflows.&lt;/p&gt;
+&lt;p&gt;The future of AI isn't just about smarter responses—it's about AI that can truly act as a partner in achieving our goals.&lt;/p&gt;</content><category term="Technology"/><category term="ai"/><category term="agentic ai"/><category term="automation"/><category term="artificial intelligence"/></entry><entry><title>Test Blog 1</title><link href="https://dsoudakov-cm.github.io/blog/short-test-1.html" rel="alternate"/><published>2025-08-24T15:30:00-04:00</published><updated>2025-08-24T15:30:00-04:00</updated><author><name>DS</name></author><id>tag:dsoudakov-cm.github.io,2025-08-24:/blog/short-test-1.html</id><summary type="html">&lt;p&gt;Short test.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;This is a test.&lt;/h2&gt;</content><category term="Technology"/><category term="test"/></entry><entry><title>Deploying an EC2 Instance with Ubuntu and NVIDIA Support</title><link href="https://dsoudakov-cm.github.io/blog/deploy-ec2-instance-ubuntu-nvidia.html" rel="alternate"/><published>2024-04-17T00:00:00-04:00</published><updated>2024-04-17T00:00:00-04:00</updated><author><name>DS and GPT4</name></author><id>tag:dsoudakov-cm.github.io,2024-04-17:/blog/deploy-ec2-instance-ubuntu-nvidia.html</id><summary type="html">&lt;p&gt;Step-by-step guide to deploying an EC2 instance using latest (as of today) Ubuntu 22.04 LTS and setting up NVIDIA drivers.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This guide will walk you through the steps to deploy an Amazon EC2 instance using the &lt;code&gt;p3.2xlarge&lt;/code&gt; type with an AMI provided by Canonical for Ubuntu 22.04 LTS (Jammy Jellyfish). This setup is particularly useful for applications requiring GPU capabilities, such as machine learning and video processing.&lt;/p&gt;
+&lt;h2&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;An AWS account&lt;/li&gt;
+&lt;li&gt;Basic knowledge of Linux commands and AWS management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Deployment Steps&lt;/h2&gt;
+&lt;h3&gt;Step 1: Launch the EC2 Instance&lt;/h3&gt;
+&lt;p&gt;Start by launching an EC2 instance with the following specifications:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Instance Type:&lt;/strong&gt; &lt;code&gt;p3.2xlarge&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AMI ID:&lt;/strong&gt; &lt;code&gt;ami-05d4121edd74a9f06&lt;/code&gt; (Canonical, Ubuntu, 22.04 LTS, amd64 jammy image build on 2024-03-01)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Step 2: Initial Setup&lt;/h3&gt;
+&lt;p&gt;Once the instance is running, connect to it via SSH and execute the following commands as a superuser (&lt;code&gt;sudo su -&lt;/code&gt;):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;apt&lt;span class="w"&gt; &lt;/span&gt;update
+apt&lt;span class="w"&gt; &lt;/span&gt;upgrade&lt;span class="w"&gt; &lt;/span&gt;-y
+reboot
+apt&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;amazon-ec2-utils&lt;span class="w"&gt; &lt;/span&gt;awscli&lt;span class="w"&gt; &lt;/span&gt;nvtop&lt;span class="w"&gt; &lt;/span&gt;-y&lt;span class="w"&gt; &lt;/span&gt;-q
+apt&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;ffmpeg&lt;span class="w"&gt; &lt;/span&gt;nvidia-utils-545&lt;span class="w"&gt; &lt;/span&gt;python3-pip&lt;span class="w"&gt; &lt;/span&gt;python3.10-venv&lt;span class="w"&gt; &lt;/span&gt;-y&lt;span class="w"&gt; &lt;/span&gt;-q
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;To enable GPU processing, install the NVIDIA drivers:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl&lt;span class="w"&gt; &lt;/span&gt;https://us.download.nvidia.com/tesla/550.54.15/NVIDIA-Linux-x86_64-550.54.15.run&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;nvidia.run
+chmod&lt;span class="w"&gt; &lt;/span&gt;+x&lt;span class="w"&gt; &lt;/span&gt;nvidia.run
+./nvidia.run&lt;span class="w"&gt; &lt;/span&gt;--silent
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Install software required for video processing and Python environment management:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python3&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;venv&lt;span class="w"&gt; &lt;/span&gt;env1
+.&lt;span class="w"&gt; &lt;/span&gt;./env1/bin/activate
+pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;nvidia-cudnn-cu12&lt;span class="w"&gt; &lt;/span&gt;nvidia-cudnn-cu11&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;.9.6.50&lt;span class="w"&gt; &lt;/span&gt;-y&lt;span class="w"&gt; &lt;/span&gt;-q
+&lt;span class="nb"&gt;export&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;python3&lt;span class="w"&gt; &lt;/span&gt;-c&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;import os; import nvidia.cublas.lib; import nvidia.cudnn.lib; print(os.path.dirname(nvidia.cublas.lib.__file__) + &amp;quot;:&amp;quot; + os.path.dirname(nvidia.cudnn.lib.__file__))&amp;#39;&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Test using faster-whiser&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip&lt;span class="w"&gt; &lt;/span&gt;-q&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;faster-whisper-cli
+pip&lt;span class="w"&gt; &lt;/span&gt;-q&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;git+https://github.com/dsoudakov/python_modules.git@main#subdirectory&lt;span class="o"&gt;=&lt;/span&gt;youtube_audio
+youtube-audio&lt;span class="w"&gt; &lt;/span&gt;https://www.youtube.com/watch?v&lt;span class="o"&gt;=&lt;/span&gt;XlTz-TmrLJg
+faster-whisper&lt;span class="w"&gt; &lt;/span&gt;yt_audio.mp3&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;yt1.txt&lt;span class="w"&gt; &lt;/span&gt;--vad_filter&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;--model_size_or_path&lt;span class="w"&gt; &lt;/span&gt;large-v3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Notes"/><category term="AWS"/><category term="EC2"/><category term="NVIDIA"/><category term="Ubuntu"/></entry><entry><title>How to Set Up Pelican for Your Blog</title><link href="https://dsoudakov-cm.github.io/blog/setup-pelican.html" rel="alternate"/><published>2024-04-15T10:00:00-04:00</published><updated>2024-04-15T10:00:00-04:00</updated><author><name>DS and ChatGPT</name></author><id>tag:dsoudakov-cm.github.io,2024-04-15:/blog/setup-pelican.html</id><summary type="html">&lt;p&gt;This tutorial walks you through setting up Pelican, a static site generator powered by Python, for your personal or professional blog.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Setting Up Pelican for Your Blog&lt;/h1&gt;
+&lt;p&gt;Pelican is a versatile static site generator that leverages Python to help you create blogs and websites quickly and with minimal configuration. Here's a step-by-step guide to setting up Pelican for your blog.&lt;/p&gt;
+&lt;h2&gt;Step 1: Install Python&lt;/h2&gt;
+&lt;p&gt;Pelican is built on Python, so you need Python installed on your machine. It's recommended to use the latest Python 3 version. You can download it from the official &lt;a href="https://www.python.org/downloads/"&gt;Python website&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Step 2: Install Pelican and Markdown&lt;/h2&gt;
+&lt;p&gt;Once Python is installed, you can install Pelican and Markdown support using pip. Open your terminal and run:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;pelican&lt;span class="w"&gt; &lt;/span&gt;markdown&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;# install&lt;/span&gt;
+pelican&lt;span class="w"&gt; &lt;/span&gt;content&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;# generate content (add md files to content folder first)&lt;/span&gt;
+pelican&lt;span class="w"&gt; &lt;/span&gt;--listen&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;# serve locally&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tutorials"/><category term="pelican"/><category term="static site generator"/><category term="python"/><category term="blogging"/></entry></feed>
