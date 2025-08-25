@@ -29,8 +29,16 @@ jobs:
     - name: Check for new markdown files
       id: check-files
       run: |
+        # Debug: Show all changes in this commit
+        echo "All changes in commit ${{ github.sha }}:"
+        git diff-tree --no-commit-id --name-status -r ${{ github.sha }}
+        
         # Check if any new .md files were added to content directory (excluding auto-generated)
-        NEW_MD_FILES=$(git diff-tree --no-commit-id --name-status -r ${{ github.sha }} | grep -E '^A\s+content/[^/]+\.md$' | grep -v 'auto-generated' || true)
+        NEW_MD_FILES=$(git diff-tree --no-commit-id --name-status -r ${{ github.sha }} | grep '^A.*content/.*\.md$' | grep -v 'auto-generated' || true)
+        
+        echo "Filtered markdown files:"
+        echo "$NEW_MD_FILES"
+        
         if [ -z "$NEW_MD_FILES" ]; then
           echo "No new markdown files added to content directory"
           echo "skip=true" >> $GITHUB_OUTPUT
