@@ -35,15 +35,12 @@ jobs:
         
     - name: Build Pelican site
       run: |
-        pelican content -o docs -s publishconf.py
+        pelican content -o output -s publishconf.py
         
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
-      
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: './docs'
+        path: './output'
 
   deploy:
     environment:
