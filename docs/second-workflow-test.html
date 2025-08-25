@@ -4,9 +4,10 @@
                         <meta charset="utf-8" />
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <meta name="generator" content="Pelican" />
-                        <title>DS Blog - Authors</title>
+                        <title>Second Workflow Test</title>
                         <link rel="stylesheet" href="./theme/css/main.css" />
                                 <link href="https://dsoudakov-cm.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="DS Blog Atom Feed" />
+    <meta name="description" content="A second test to verify the auto-blog workflow triggers correctly for new files." />
         </head>
 
         <body id="index" class="home">
@@ -16,21 +17,41 @@
                                                 <li><a href="./category/development.html">Development</a></li>
                                                 <li><a href="./category/notes.html">Notes</a></li>
                                                 <li><a href="./category/technology.html">Technology</a></li>
-                                                <li><a href="./category/testing.html">Testing</a></li>
+                                                <li class="active"><a href="./category/testing.html">Testing</a></li>
                                                 <li><a href="./category/tutorials.html">Tutorials</a></li>
                         </ul></nav>
                 </header><!-- /#banner -->
+  <section id="content" class="body">
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="./second-workflow-test.html" rel="bookmark"
+             title="Permalink to Second Workflow Test">Second Workflow Test</a></h1>
+      </header>
 
-    <section id="content" class="body">
-        <h1>Authors on DS Blog</h1>
-        <ul>
-                <li><a href="./author/dmitri.html">Dmitri</a> (1)</li>
-                <li><a href="./author/ds.html">DS</a> (7)</li>
-                <li><a href="./author/ds-and-chatgpt.html">DS and ChatGPT</a> (1)</li>
-                <li><a href="./author/ds-and-gpt4.html">DS and GPT4</a> (1)</li>
-        </ul>
-    </section>
+      <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2025-08-25T20:35:00-04:00">
+                Published: Mon 25 August 2025
+        </abbr>
 
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="./author/ds.html">DS</a>
+                </address>
+        <p>In <a href="./category/testing.html">Testing</a>.</p>
+<p>tags: <a href="./tag/workflow.html">workflow</a> <a href="./tag/automation.html">automation</a> <a href="./tag/success.html">success</a> </p>        
+</footer><!-- /.post-info -->        <h1>Second Workflow Test</h1>
+<p>This is a brand new markdown file that should trigger the auto-blog workflow because it's being added for the first time.</p>
+<p>The workflow should:
+1. Detect this as a new <code>.md</code> file (status <code>A</code> in git)
+2. Create an auto-generated blog entry
+3. Commit and push the changes
+4. Trigger the deploy workflow to build and deploy</p>
+<p>Let's see if it works this time!</p>
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
                 <section id="extras" class="body">
                                 <div class="blogroll">
                                         <h2>links</h2>
